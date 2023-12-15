@@ -1,5 +1,16 @@
 # Figures 4, 5, 6
 # read in csv file produced from mathematica to code distinct qualitative behaviors
+library(ggplot2)
+library(ggpubr)
+library(viridis)
+library(deSolve)
+library(gridExtra)
+library(cowplot)
+
+# load parameter_for_species file
+source("parameters_for_species.R")
+# load model.R file 
+source("model.R")
 
 # Grid Figures
 #input results from matlab
