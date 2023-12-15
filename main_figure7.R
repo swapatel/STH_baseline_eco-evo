@@ -1,6 +1,10 @@
 # Figure 7 Evolutionary trajectories depending on species
 
 # load parameter_for_species file
+source("~/parameters_for_species.R")
+# load model.R file 
+source("~/model.R")
+
 p <- list()
 pW <- list()
 ans.all <- c()
