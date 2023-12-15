@@ -5,7 +5,7 @@ source("parameters_for_species.R")
 # load model.R file 
 source("model.R")
 
-parms_vary <- seq(0.1, 0.9, by=0.1)
+parms_vary <- c(0.1, 0.5, 0.9)
 
 n0<-c(W=10,L=100, x=0.1, y=0) #set initial conditions
 tf<-20*365
@@ -17,7 +17,7 @@ ans <- solve_ode(n0, times, treat.times, parms)
 worm_mat <- ans[,2]
 x_mat <- ans[,4]
 
-plot(times, ans[,2], type= "l", ylim=c(0,20))
+plot(times, ans[,2], type= "l", ylim=c(0,20), ylab="adult worms")
 
 
 for(i in 1:length(parms_vary)){
@@ -50,7 +50,7 @@ for(i in 1:length(parms_vary)){
   
 }
 
-plot(times, x_mat[1,], type= "l", ylim=c(0,1))
+plot(times, x_mat[1,], type= "l", ylim=c(0,1), ylab="frequency")
 for(i in 1:length(parms_vary)){
   points(times, x_mat[i,], type= "l", col=i)
 }
