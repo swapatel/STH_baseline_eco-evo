@@ -1,4 +1,10 @@
 # Figure 7 Evolutionary trajectories depending on species
+library(ggplot2)
+library(ggpubr)
+library(viridis)
+library(deSolve)
+library(gridExtra)
+library(cowplot)
 
 # load parameter_for_species file
 source("parameters_for_species.R")
