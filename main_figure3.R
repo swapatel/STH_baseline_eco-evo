@@ -8,7 +8,10 @@ library(gridExtra)
 library(cowplot)
 
 # load parameter_for_species file
+source("~/parameters_for_species.R")
 # load model.R file 
+source("~/model.R")
+
 
 # example for Hookworm
 parms <- parmsHookworm
