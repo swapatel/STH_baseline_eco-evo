@@ -2,7 +2,6 @@
 # read in csv file produced from mathematica to code distinct qualitative behaviors
 
 # Grid Figures
-setwd("./Grids")
 #input results from matlab
 treat1 = read.csv("50grid_treatment.csv")
 treat = read.csv("50grid_treatment_res3.csv",header=F)
