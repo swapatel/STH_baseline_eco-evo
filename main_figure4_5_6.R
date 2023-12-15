@@ -107,7 +107,6 @@ for(i in 1:length(spp.list)) { #length(spp.list)
   
 }
 
-setwd("..")
 p4A = ggarrange(p[[2]], pH[[2]],pP[[2]],pPm[[2]], ncol = 1, nrow = 4)
 save_plot("fig4A_grids.pdf", p4A, base_height=5, base_width=2.5)
 p4B = ggarrange(p[[6]], pH[[6]],pP[[6]],pPm[[6]], ncol = 1, nrow = 4)
