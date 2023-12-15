@@ -6,6 +6,8 @@ source("parameters_for_species.R")
 source("model.R")
 
 parms_vary <- c(0.1, 0.5, 0.9)
+freq <- 0.5/0.9
+parms<-parmsHookworm
 
 n0<-c(W=10,L=100, x=0.1, y=0) #set initial conditions
 tf<-20*365
