@@ -1,4 +1,9 @@
 # Figure 9 - optimization in frequency and coverage
+library(deSolve)
+# load parameter_for_species file
+source("~/parameters_for_species.R")
+# load model.R file 
+source("~/model.R")
 
 parms_vary <- seq(0.1, 0.9, by=0.1)
 
