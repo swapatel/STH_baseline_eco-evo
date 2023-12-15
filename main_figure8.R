@@ -213,4 +213,5 @@ for(i in 1:length(parms.list)){
 #subset to only plotting parasite traits: lambda, mu_a, mu_l and Beta
 p1 = do.call(grid.arrange,c(p.lambda[2], p.mu_a[2],p.mu_l[2],p.beta[2]))
 p1
+save_plot("Fig8_evotrajectories.pdf", p1, base_height=5, base_width=7)
 
