@@ -1,9 +1,9 @@
 # Figure 8 - Evolutionary trajectories dependent on parameters
 library(deSolve)
 # load parameter_for_species file
-source("~/parameters_for_species.R")
+source("parameters_for_species.R")
 # load model.R file 
-source("~/model.R")
+source("model.R")
 
 solve_ode.beta <- function(initial_cond, times, treat.times, parameters){
   R0 <- c(1,5,10)
