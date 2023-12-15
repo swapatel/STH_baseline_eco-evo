@@ -8,9 +8,9 @@ library(gridExtra)
 library(cowplot)
 
 # load parameter_for_species file
-source("~/parameters_for_species.R")
+source("parameters_for_species.R")
 # load model.R file 
-source("~/model.R")
+source("model.R")
 
 
 # example for Hookworm
