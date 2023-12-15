@@ -12,7 +12,7 @@ tf<-20*365
 times<-0:tf
 if(365/freq < tf) treat.times <- round(seq(365/freq, tf, by=365/freq))
 treat.times <- round(seq(366/freq, tf, by=366/freq))
-ans <- solve_ode(n0, times, treat.times, parms, 0)
+ans <- solve_ode(n0, times, treat.times, parms)
 
 worm_mat <- ans[,2]
 x_mat <- ans[,4]
@@ -41,7 +41,7 @@ for(i in 1:length(parms_vary)){
   times<-0:tf
   if(365/freq < tf) treat.times <- round(seq(365/freq, tf, by=365/freq))
   treat.times <- round(seq(366/freq, tf, by=366/freq))
-  ans <- solve_ode(n0, times, treat.times, parms, 0)
+  ans <- solve_ode(n0, times, treat.times, parms)
   
   worm_mat <- rbind(worm_mat, ans[,2])
   x_mat <- rbind(x_mat, ans[,4])
