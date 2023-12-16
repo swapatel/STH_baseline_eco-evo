@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Patel
+    given-names: Swati
+    orcid: https://orcid.org/0000-0003-3502-6895
+  - family-names: Lyberger
+    given-names: Kelsey
+    orcid: https://orcid.org/0000-0003-4903-380X
+ - family-names: Vegvari
+    given-names: Carolin
+title: "Baseline eco-evolutionary model for anthelmintich resistance"
+date-released: 2023-12-16
+url: "https://github.com/swapatel/STH_baseline_eco_evo"
