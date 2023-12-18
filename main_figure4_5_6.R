@@ -61,7 +61,7 @@ for(i in 1:length(spp.list)) { #length(spp.list)
     geom_point() +
     labs(x="frequency", y= "coverage") +
     theme(legend.position="right") +
-    labs(x=expression(paste(italic(mu[l]))), y= expression(paste(italic(mu[l])))) +
+    #labs(x=expression(paste(italic(mu[l]))), y= expression(paste(italic(mu[l])))) +
     #    ggtitle("Treatment grid") +
     scale_color_manual(values = c("#FFFF99","#66CC99","#9999CC","#9999CC"),labels = c("grow","rescue","decline","decline"),drop=FALSE) +theme(legend.position="none")
   #  print(p)
