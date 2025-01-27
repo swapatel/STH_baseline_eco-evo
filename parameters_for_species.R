@@ -11,7 +11,7 @@ parmsAscaris<-list(
   mu_AA = 0.1, 			# drug induced death probability for homozygote resistant
   mu_AB = 0.5, 			# heterozygote
   mu_BB = 0.9, 			# susceptible homozygote
-  cov = 0.9, #coverage
+  cov = 1.0, #coverage
   WLratio = 3.5*10^-6 
 )
 
@@ -26,7 +26,7 @@ parmsHookworm<-list(
   mu_AA = 0.1, 			# drug induced death probability for homozygote resistant
   mu_AB = 0.5, 			# heterozygote
   mu_BB = 0.9, 			# susceptible homozygote
-  cov = 0.9, #coverage
+  cov = 1.0, #coverage
   WLratio = 5.5*10^-5 
 )
 
@@ -41,7 +41,7 @@ parmsTrichuris<-list(
   mu_AA = 0.1, 			# drug induced death probability for homozygote resistant
   mu_AB = 0.5, 			# heterozygote
   mu_BB = 0.9, 			# susceptible homozygote
-  cov = 0.9, #coverage
+  cov = 1.0, #coverage
   WLratio = 5.1*10^-5 
 )
 
@@ -57,7 +57,7 @@ parmsTcolubAUS<-list(
   mu_AA = 0.1, 			# drug induced death probability for homozygote resistant
   mu_AB = 0.5, 			# heterozygote
   mu_BB = 0.9, 			# susceptible homozygote
-  cov = 0.9, #coverage
+  cov = 1.0, #coverage
   WLratio = 0.035 
 )
 
@@ -72,7 +72,7 @@ parmsOcircUK<-list(
   mu_AA = 0.1, # drug induced death probability for homozygote resistant
   mu_AB = 0.5, # heterozygote
   mu_BB = 0.9, # susceptible homozygote
-  cov = 0.9, #coverage
+  cov = 1.0, #coverage
   WLratio = 0.045 
 )
 
@@ -87,7 +87,7 @@ parmsHcontAUS<-list(
   mu_AA = 0.1, # drug induced death probability for homozygote resistant
   mu_AB = 0.5, # heterozygote
   mu_BB = 0.9, # susceptible homozygote
-  cov = 0.9, #coverage
+  cov = 1.0, #coverage
   WLratio = 0.086
 )
 
@@ -95,5 +95,13 @@ parms.list <- list(Ascaris=parmsAscaris,
                    Hookworm=parmsHookworm,
                    Trichuris=parmsTrichuris,
                    TcolubAUS=parmsTcolubAUS,
+                   OcircUK=parmsOcircUK,
+                   HcontAUS=parmsHcontAUS)
+
+parms.listH <- list(Ascaris=parmsAscaris,
+                   Hookworm=parmsHookworm,
+                   Trichuris=parmsTrichuris)
+
+parms.listL <- list(TcolubAUS=parmsTcolubAUS,
                    OcircUK=parmsOcircUK,
                    HcontAUS=parmsHcontAUS)
